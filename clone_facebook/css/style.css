@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 20vh;
+    justify-content: center;
+    
+}
+.content {
+    display: flex;
+}
+
+
+.content__left {
+    margin-right: 5vh;
+}
+.content__left p {
+    width: 550px;
+    font-size: 2em;
+    margin-left: 30px;
+}
+
+
+
+.content__right_textbox {
+    margin-left: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+}
+.content__right_textbox input{
+    display: block;
+}
+/* 
+email and password configuration
+configuração das caixa de email e senha
+*/
+#email, #password {
+    width: 50vh;
+    height: 6vh;
+    margin:  20px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+}
+#goin {
+    margin: 20px auto;
+    width: 50vh;
+    height: 7vh;
+    background: #1877f2;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+    border: transparent;
+    border-radius: 5px;
+}
+/* animação ao passar mouse em cima do botão entrar */
+#goin:hover {
+    background: #1770e4;
+}
+.content__right_textbox p{
+    margin-bottom: 20px;
+}
+.content__right_textbox a{
+    color: #1877f2;
+    text-decoration: none;
+}
+#newaccount {
+    margin: 20px auto 20px auto;
+    width: 30vh;
+    height: 7vh;
+    font-size: 1.4em;
+    background: #42b72a;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+}
+/* animação ao passar mouse em cima do botão criar nova conta */
+#newaccount:hover {
+    background: #3dac27;
+}
+#createpage{
+    text-align: center;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 0px;
+    font-size: .8em;
+}
+#createpage a{
+   text-decoration: none;
+   color: black;
+   font-weight: 700;
+}
+
+/* sublinhada de todos os links ao passar mouse em cima */
+.content a:hover, #createpage a:hover{
+    text-decoration: underline;
+ }
+
+
+
+/* parágrafo do lado esquerdo vai ficar menor apartir de 1090px */
+@media (max-width: 1090px) {
+    .content__left {
+        margin-right: 0vh;
+    }
+    .content__left p {
+        width: 400px;
+        font-size: 1.5em; /* tamanho da fonte do parágrafo */
+    }
+}
+/* para telas menores */
+@media (max-width: 900px){
+    main {
+        margin-top: 2vh;
+        margin-left: -20px; 
+    }
+    .content {
+        display: block; /* transformei em block para deixar tudo em baixo do outro */
+    }
+    .content__left p {
+        text-align: center; /* centralizar o parágrafo */
+        margin-bottom: 30px; /* espaço da caixa de login */
+    }
+    .content__left img{
+        display: block; /* para deixar a logo centralizada com o "margin" */
+        margin: auto; /* centralizando a imagem */
+    }
+}

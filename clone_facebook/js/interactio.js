@@ -1,0 +1,1 @@
+console.log('Esse página foi criado com inteção de estudos, todos os direitos e créditos para o "facebook.com"')
