@@ -11,9 +11,10 @@ main {
     width: 100%;
     height: 100%;
     display: flex;
-    margin-top: 20vh;
+    padding-top: 20vh;
     justify-content: center;
-    
+    background: #f0f2f5;
+    padding-bottom: 188px; 
 }
 .content {
     display: flex;
@@ -105,6 +106,62 @@ configuração das caixa de email e senha
 .content a:hover, #createpage a:hover{
     text-decoration: underline;
  }
+
+/* Rodapé */
+footer {
+    margin: 0 80px;
+}
+.lineseparatingthefirstpart {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.separatingfromthetopline {
+    margin-top: 5px;
+}
+
+.linksnavigation li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.linksnavigation p{
+    font-size: 13px;
+    color: #8a8d91;
+}
+.linksnavigation a{
+    text-decoration: none;
+    color: #8a8d91;
+}
+.linksnavigation a:hover{
+    text-decoration: underline;
+}
+.linksnavigation abbr{
+    text-decoration: none;
+}
+footer p {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #737373;
+}
+#rightsreserved {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+footer p abbr {
+    text-decoration: none;
+}
+
+#linktofacebook a {
+    text-decoration: none;
+    color: #737373;
+}
+#linktofacebook a:hover {
+    text-decoration: underline;
+}
+
 
 
 
